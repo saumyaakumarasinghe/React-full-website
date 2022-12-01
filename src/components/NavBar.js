@@ -1,14 +1,19 @@
-import React from 'react'
-import Logo from '../assets/iceCreamLogo.jpg'                   //Import logo picture 
+import React, { useState } from 'react'
+import Logo from '../assets/logo.png'                   //Import logo picture 
 import { Link } from 'react-router-dom'
-
+import ReorderIcon from '@mui/icons-material/Reorder';
+import '../styles/NavBar.css'
 
 function NavBar() {
+
+  const [openLinks, setOpenLinks] = useState(false);    //State
+
   return (
     <div className='navbar'> 
 
-        <div className='leftSide'>
+        <div className='leftSide' id={openLinks ? "open" : "close"}> 
             <img src={Logo}/> 
+            <div className='hiddenLinks'></div>
         </div>
 
         <div className='rightSide'>
@@ -16,8 +21,11 @@ function NavBar() {
           <Link to='/menu'> Menu </Link>
           <Link to='/about'> About </Link>
           <Link to='/contact'> Contact </Link>
+          <button>
+            <ReorderIcon/>
+          </button>
         </div>
-        
+
     </div>
   )
 }
