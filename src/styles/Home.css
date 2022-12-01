@@ -1,6 +1,6 @@
 .home {
     width: 100%;
-    height: 90vh;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: left;
@@ -8,11 +8,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
   
 .headerContainer {
-    width: auto;
     margin-left: 50px;
 }
   
@@ -20,34 +19,35 @@
     justify-content: center;
     align-items: center;
     font-size: 90px;
-    height: 60px;
-    font-weight: 50;
-    color: black;
+    height: 50px;
+    color: var(--mainColor);
+    font-family: 'Gabriola';
 }
   
 .headerContainer p {
     padding: 0;
     font-size: 40px;
-    font-weight: lighter;
-    color: black;
+    color: var(--mainColor);
+    font-family: 'Gabriola';
 }
   
 .headerContainer button {
-    color: black;
+    color: var(--mainColor);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     justify-content: center;
-    background-color: #121619;
+    background-color: var(--mainColor);
     height: 50px;
     width: 180px;
-    color: white;
+    color: var(--textColor);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
+    font-family: 'Gabriola';
 }
   
 .headerContainer button:hover {
-    background-color: #07090a;
+    color: var(--themePink);
     cursor: pointer;
     transition: 0.3s ease-in;
 }
@@ -71,29 +71,29 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #121619;
-        color: white;
+        background-color: var(--mainColor);
+        color: var(--textColor);
     }
   
     .headerContainer h1 {
         font-size: 40px;
         height: 30px;
-        color: white;
+        color: var(--textColor);
     }
   
     .headerContainer p {
         font-size: 30px;
-        color: white;
+        color: var(--textColor);
     }
   
     .headerContainer button {
-        background-color: white;
-        color: #121619;
+        background-color: var(--textColor);
+        color: var(--mainColor);
         margin-bottom: 30px;
     }
   
     .headerContainer button:hover {
-        background-color: rgb(225, 225, 225);
-        color: #121619;
+        background-color: var(--textColor);
+        color: var(--mainColor);
     }
 }

@@ -13,3 +13,10 @@ body {
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --themePink: rgb(236,10,145);
+  --themePurple: rgb(120,29,124);
+  --textColor: white;
+  --mainColor: black;
+}

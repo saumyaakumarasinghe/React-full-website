@@ -1,17 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+// import BannerImage from '../assets/d.webp'
 import BannerImage from '../assets/banner.jpg'
 import '../styles/Home.css'
 
 function Home() {
   return (
-    <div className='home'>
-      <div className='headerContainer' style={{ backgroundImage: `url(${BannerImage})` }}>
-        <h1> Donut King </h1>
-        <p> DONUT TO FIT ANY TASTE </p>
+    <div className='home' style={{ backgroundImage: `url(${BannerImage})` }}>
+      <div className='headerContainer'>
+        <h1> Hey there!.. </h1> 
+        <h1> Welcome to donut king </h1>
+        <p> Let it rain donuts and wait for the sunshine!</p>
 
         <Link to='/menu'>
-          <button> ORDER NOW </button>
+          <button> TRY NOW </button>
         </Link>
 
       </div>
