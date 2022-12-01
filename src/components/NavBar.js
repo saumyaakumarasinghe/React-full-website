@@ -8,7 +8,7 @@ function NavBar() {
   const [openLinks, setOpenLinks] = useState(false);    //State
 
   const toggleNavBar = () => {
-    setOpenLinks(!openLinks)                            //Change current value to the opposite of what it currently is (use !)
+    setOpenLinks(!openLinks);                           //Change current value to the opposite of what it currently is (use !)
   };
 
   return (
@@ -16,7 +16,12 @@ function NavBar() {
 
         <div className='leftSide' id={openLinks ? "open" : "close"}> 
             <img src={Logo}/> 
-            <div className='hiddenLinks'></div>
+            <div className='hiddenLinks'>
+              <Link to='/'> Home </Link>
+              <Link to='/menu'> Menu </Link>
+              <Link to='/about'> About </Link>
+              <Link to='/contact'> Contact </Link>
+            </div>
         </div>
 
         <div className='rightSide'>
@@ -33,4 +38,4 @@ function NavBar() {
   )
 }
 
-export default NavBar
+export default NavBar;
