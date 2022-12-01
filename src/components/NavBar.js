@@ -5,8 +5,11 @@ import ReorderIcon from '@mui/icons-material/Reorder';
 import '../styles/NavBar.css'
 
 function NavBar() {
-
   const [openLinks, setOpenLinks] = useState(false);    //State
+
+  const toggleNavBar = () => {
+    setOpenLinks(!openLinks)                            //Change current value to the opposite of what it currently is (use !)
+  };
 
   return (
     <div className='navbar'> 
@@ -21,7 +24,7 @@ function NavBar() {
           <Link to='/menu'> Menu </Link>
           <Link to='/about'> About </Link>
           <Link to='/contact'> Contact </Link>
-          <button>
+          <button onClick={toggleNavBar}>
             <ReorderIcon/>
           </button>
         </div>

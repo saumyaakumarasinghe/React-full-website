@@ -1,7 +1,14 @@
+:root {
+    --themePink: rgb(236,10,145);
+    --themePurple: rgb(120,29,124);
+    --textColor: white;
+    --mainColor: black;
+}
+
 .navbar {
     width: 100%;
     height: 100px;
-    background-color: #121619;
+    background-color: var(--mainColor);
     display: flex;
     flex-direction: row;
 }
@@ -27,17 +34,27 @@
 }
 
 .navbar a {
-    color: white;
+    color: var(--textColor);
     text-decoration: none;
     margin: 20px;
 }
 
+.navbar a:hover {
+    color: var(--themePink);
+}
+
 .navbar .rightSide button {
-    background-color: transparent;
+    padding: 5px;
+    background: transparent;
     border: none;
-    color: white;
+    outline: none;
+    color: var(--textColor);
     cursor: pointer;
-}   
+}  
+
+.navbar .rightSide button:hover {
+    color: var(--themePink);
+}
 
 .navbar .rightSide svg {
     font-size: 40px;
@@ -46,6 +63,7 @@
 .navbar #open {
     padding-left: 0px;
 }
+
 .navbar #open img {
     display: none;
 }
