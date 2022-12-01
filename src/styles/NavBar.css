@@ -76,8 +76,9 @@
 }
 
 .navbar #open a {
+    padding: 0px;
     width: 70px;
-    margin: 5px;
+    margin: 40px;
 }
 
 /* Media queries */
