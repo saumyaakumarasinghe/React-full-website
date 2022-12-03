@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from '../src/pages/Home'
-import About from '../src/pages/About'
+import Menu from '../src/pages/Menu'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <NavBar/>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+          <Route path="/menu" component={Menu} />
         </Switch>
         <Footer/>
       </Router>
