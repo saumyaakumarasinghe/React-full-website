@@ -6,7 +6,7 @@ import '../styles/Menu.css'
 function Menu() {
   return (
     <div className='menu'>
-      <h1 className='menueTitle'> Our Menu</h1>
+      <h1 className='menueTitle'> We Serve </h1>
       <div className='menuList'>
         {MenuArray.map((menuItem, key) => {
             return (
